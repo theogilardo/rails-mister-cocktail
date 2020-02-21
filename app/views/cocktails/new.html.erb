@@ -1,10 +1,13 @@
+<div class="container col-6 offset-3 mt-5">
+
 <h1>Create your cocktail</h1>
 
-<%= form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
-
+<br/>
 <%= link_to "Go Back", cocktails_path %>
+</div>
 
