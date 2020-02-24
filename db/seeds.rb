@@ -11,9 +11,12 @@ Cocktail.destroy_all
 
 puts 'Creating cocktails and ingredient...'
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "Lemon")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Chocolate")
+Ingredient.create(name: "Mint leaves")
+Ingredient.create(name: "Campari")
+Ingredient.create(name: "Vodka")
 
 cocktails_attributes = [
   {
